@@ -99,24 +99,24 @@ namespace _1A2B
             
             int seed = Guid.NewGuid().GetHashCode();
             var random = new Random(seed);
-            int number1 = random.Next(0, 9);
-            int number2 = random.Next(0, 9);
-            int number3 = random.Next(0, 9);
-            int number4 = random.Next(0, 9);
+            int number1 = random.Next(0, 10);
+            int number2 = random.Next(0, 10);
+            int number3 = random.Next(0, 10);
+            int number4 = random.Next(0, 10);
 
             
             
             while (number2 == number1)
             {
-                number2 = random.Next(0, 9);
+                number2 = random.Next(0, 10);
             }                    
             while (number3 == number1 || number3 == number2)
             {
-                number3 = random.Next(0, 9);
+                number3 = random.Next(0, 10);
             }
             while (number4 == number1 || number4 == number2 || number4 == number3)
             {
-                number4 = random.Next(0, 9);
+                number4 = random.Next(0, 10);
             }
             string ans1 = number1.ToString();
             string ans2 = number2.ToString();

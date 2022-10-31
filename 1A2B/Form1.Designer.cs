@@ -50,6 +50,7 @@
             this.txtGuess.Location = new System.Drawing.Point(12, 96);
             this.txtGuess.Multiline = true;
             this.txtGuess.Name = "txtGuess";
+            this.txtGuess.ReadOnly = true;
             this.txtGuess.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtGuess.Size = new System.Drawing.Size(263, 297);
             this.txtGuess.TabIndex = 1;
